@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9C3145938B984DE4F30C43A97356394DC7268D56",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AE075FB8B6ADC44D24D3C10942A426B00159475F" : 9223372036854775807,
+    "9C3145938B984DE4F30C43A97356394DC7268D56" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "10E9855D-3A3E-44CD-938B-EE97D63FB50F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AE075FB8B6ADC44D24D3C10942A426B00159475F" : "..",
+    "9C3145938B984DE4F30C43A97356394DC7268D56" : "Assets\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PullToRefreshSampleSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/Swift\/PullToRefresh\/PullToRefreshSampleSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitlab.com\/iXMobile\/Assets.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9C3145938B984DE4F30C43A97356394DC7268D56"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/hub.jazz.net\/git\/ugomarinelli\/InnovUp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE075FB8B6ADC44D24D3C10942A426B00159475F"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QU9-eQ-AdV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="sXW-vV-F4C">
+            <objects>
+                <viewController id="x5l-Wp-zxQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V9k-Hi-fZV"/>
+                        <viewControllerLayoutGuide type="bottom" id="v6v-yi-ev7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kUL-xo-KgE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKc-F2-Zid">
+                                <rect key="frame" x="200" y="214" width="199" height="30"/>
+                                <state key="normal" title="Pull to Refresh on Table View"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="15E-rc-KNg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTh-G7-Bgi">
+                                <rect key="frame" x="212" y="284" width="176" height="30"/>
+                                <state key="normal" title="Pull To Refresh on UIView"/>
+                                <connections>
+                                    <segue destination="tPJ-UB-YfB" kind="show" id="uPX-5S-tZc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KKc-F2-Zid" firstAttribute="centerX" secondItem="kUL-xo-KgE" secondAttribute="centerX" id="Gvl-hE-Hqg"/>
+                            <constraint firstItem="dTh-G7-Bgi" firstAttribute="top" secondItem="KKc-F2-Zid" secondAttribute="bottom" constant="40" id="Nft-xW-w3P"/>
+                            <constraint firstItem="KKc-F2-Zid" firstAttribute="top" secondItem="V9k-Hi-fZV" secondAttribute="bottom" constant="150" id="Oue-kY-o9T"/>
+                            <constraint firstItem="dTh-G7-Bgi" firstAttribute="centerX" secondItem="kUL-xo-KgE" secondAttribute="centerX" id="j6r-FE-gJ0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jqh-ye-JIT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLp-hb-wjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="324"/>
+        </scene>
+        <!--Table ViewVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TableViewVC" customModule="PullToRefreshSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wad-6Z-9vs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="E2z-b1-Ctm">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E2z-b1-Ctm" id="t4e-k8-7YO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wad-6Z-9vs" secondAttribute="trailing" constant="-20" id="des-Uv-HjI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wad-6Z-9vs" secondAttribute="bottom" id="qI1-CI-VHO"/>
+                            <constraint firstItem="Wad-6Z-9vs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="qg2-kd-grc"/>
+                            <constraint firstItem="Wad-6Z-9vs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="w87-9i-H0b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tView" destination="Wad-6Z-9vs" id="21z-aI-FfQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="-8"/>
+        </scene>
+        <!--ViewVC-->
+        <scene sceneID="Miz-Oh-sfm">
+            <objects>
+                <viewController id="tPJ-UB-YfB" customClass="UIViewVC" customModule="PullToRefreshSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Ob-Gv-PP9"/>
+                        <viewControllerLayoutGuide type="bottom" id="J7C-tf-xcz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mhE-4u-T2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D2c-HR-dCK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pX-wf-Z0U">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull To refresh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzO-tp-TRe">
+                                                <rect key="frame" x="245" y="289.5" width="110" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="CzO-tp-TRe" firstAttribute="centerX" secondItem="4pX-wf-Z0U" secondAttribute="centerX" id="LyH-vR-Dsv"/>
+                                            <constraint firstItem="CzO-tp-TRe" firstAttribute="centerY" secondItem="4pX-wf-Z0U" secondAttribute="centerY" id="ZPA-7d-LnB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4pX-wf-Z0U" secondAttribute="bottom" id="7mw-yG-gz5"/>
+                                    <constraint firstItem="4pX-wf-Z0U" firstAttribute="centerY" secondItem="D2c-HR-dCK" secondAttribute="centerY" id="8zx-nh-Eab"/>
+                                    <constraint firstItem="4pX-wf-Z0U" firstAttribute="leading" secondItem="D2c-HR-dCK" secondAttribute="leading" id="9nq-FS-H4H"/>
+                                    <constraint firstAttribute="trailing" secondItem="4pX-wf-Z0U" secondAttribute="trailing" id="Uex-Hb-6BT"/>
+                                    <constraint firstItem="4pX-wf-Z0U" firstAttribute="top" secondItem="D2c-HR-dCK" secondAttribute="top" id="WQs-vc-9Ye"/>
+                                    <constraint firstItem="4pX-wf-Z0U" firstAttribute="centerX" secondItem="D2c-HR-dCK" secondAttribute="centerX" id="tfX-jM-KzM"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D2c-HR-dCK" firstAttribute="leading" secondItem="mhE-4u-T2Y" secondAttribute="leadingMargin" constant="-20" id="NNJ-Tp-czE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D2c-HR-dCK" secondAttribute="trailing" constant="-20" id="UxN-r9-OBB"/>
+                            <constraint firstItem="J7C-tf-xcz" firstAttribute="top" secondItem="D2c-HR-dCK" secondAttribute="bottom" id="YOw-zX-jiM"/>
+                            <constraint firstItem="D2c-HR-dCK" firstAttribute="top" secondItem="mhE-4u-T2Y" secondAttribute="topMargin" id="qSA-np-dmd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="D2c-HR-dCK" id="TXo-SH-Suq"/>
+                        <outlet property="viewToRefresh" destination="4pX-wf-Z0U" id="wUS-4c-xIF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zq5-iJ-Iex" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="746"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rsm-tF-reL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QU9-eQ-AdV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V4d-r2-dSY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x5l-Wp-zxQ" kind="relationship" relationship="rootViewController" id="Gft-mc-GGb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTd-3S-hyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="324"/>
+        </scene>
+    </scenes>
+</document>
