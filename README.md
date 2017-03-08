@@ -31,7 +31,7 @@ var refreshControl: UIRefreshControl!
 // Initialize the refresh control.
 refreshControl = UIRefreshControl()
 refreshControl.attributedTitle = NSAttributedString(string: "Refreshing")
-refreshControl.addTarget(self, action: #selector(TableViewVC.refresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
+refreshControl.addTarget(self, action: #selector(refresh), forControlEvents: UIControlEvents.ValueChanged)
 tView.addSubview(refreshControl)
 ```
 
@@ -41,7 +41,7 @@ tView.addSubview(refreshControl)
 
 ```swift
 //Method called when we pull to refresh
-func refresh(sender:AnyObject) {
+func refresh() {
 //Do Something
 //End refresh
 self.refreshControl.endRefreshing()
@@ -92,7 +92,7 @@ var refreshControl: UIRefreshControl!
 // Initialize the refresh control.
 refreshControl = UIRefreshControl()
 refreshControl.attributedTitle = NSAttributedString(string: "Refreshing")
-refreshControl.addTarget(self, action: #selector(UIViewVC.refresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
+refreshControl.addTarget(self, action: #selector(refresh), forControlEvents: UIControlEvents.ValueChanged)
 
 //Adding refreshing to scroll view
 self.scrollView.addSubview(refreshControl)
@@ -104,7 +104,7 @@ self.scrollView.addSubview(refreshControl)
 :hamburger: Implement the refresh method that will be called when the user refreshes your table view:
 ```swift
 //Method called when we pull to refresh
-func refresh(sender:AnyObject) {
+func refresh() {
 //Do Something
 //End refresh
 self.refreshControl.endRefreshing()
